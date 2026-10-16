@@ -1,0 +1,14 @@
+# compose.yaml — Diagnostic CLI Docker Compose configuration
+# =============================================================================
+# Usage examples:
+#   docker compose run --rm diagnostic system
+#   docker compose run --rm diagnostic network google.com
+#   docker compose run --rm diagnostic disk
+#   docker compose run --rm diagnostic help
+# =============================================================================
+
+services:
+  diagnostic:
+    build: .
+    image: diagnostic-tool:latest
+    entrypoint: ["./app/diagnostic.sh"]

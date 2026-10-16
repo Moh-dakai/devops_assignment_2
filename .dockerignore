@@ -1,0 +1,34 @@
+# .dockerignore — Files excluded from the Docker build context
+# =============================================================================
+
+# Version control
+.git
+.gitignore
+
+# Log files
+logs/
+*.log
+
+# Testing and grading scripts (not needed in the image)
+test.sh
+grade.sh
+
+# Documentation (not needed in the image)
+README.md
+
+# Docker configuration files themselves
+.dockerignore
+compose.yaml
+docker-compose.yml
+
+# macOS metadata
+.DS_Store
+
+# Python cache (in case any tooling is added)
+__pycache__/
+*.pyc
+*.pyo
+
+# Editor directories
+.vscode/
+.idea/
